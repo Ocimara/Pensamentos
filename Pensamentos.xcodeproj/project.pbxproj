@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		AC820D6A2059E0BB0014A757 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC820D692059E0BB0014A757 /* AppDelegate.swift */; };
-		AC820D6C2059E0BB0014A757 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC820D6B2059E0BB0014A757 /* ViewController.swift */; };
+		AC820D6C2059E0BB0014A757 /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC820D6B2059E0BB0014A757 /* QuotesViewController.swift */; };
 		AC820D6F2059E0BB0014A757 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC820D6D2059E0BB0014A757 /* Main.storyboard */; };
 		AC820D712059E0BB0014A757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC820D702059E0BB0014A757 /* Assets.xcassets */; };
 		AC820D742059E0BB0014A757 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC820D722059E0BB0014A757 /* LaunchScreen.storyboard */; };
 		AC820D7F2059E0BB0014A757 /* PensamentosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC820D7E2059E0BB0014A757 /* PensamentosTests.swift */; };
 		AC820D8A2059E0BB0014A757 /* PensamentosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC820D892059E0BB0014A757 /* PensamentosUITests.swift */; };
+		AC820D982059E24D0014A757 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC820D972059E24D0014A757 /* ConfigViewController.swift */; };
+		AC820D9A2059E25E0014A757 /* SaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC820D992059E25E0014A757 /* SaveViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		AC820D662059E0BB0014A757 /* Pensamentos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pensamentos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC820D692059E0BB0014A757 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC820D6B2059E0BB0014A757 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AC820D6B2059E0BB0014A757 /* QuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
 		AC820D6E2059E0BB0014A757 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AC820D702059E0BB0014A757 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC820D732059E0BB0014A757 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		AC820D852059E0BB0014A757 /* PensamentosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PensamentosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC820D892059E0BB0014A757 /* PensamentosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PensamentosUITests.swift; sourceTree = "<group>"; };
 		AC820D8B2059E0BB0014A757 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC820D972059E24D0014A757 /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
+		AC820D992059E25E0014A757 /* SaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				AC820D692059E0BB0014A757 /* AppDelegate.swift */,
-				AC820D6B2059E0BB0014A757 /* ViewController.swift */,
+				AC820D6B2059E0BB0014A757 /* QuotesViewController.swift */,
 				AC820D6D2059E0BB0014A757 /* Main.storyboard */,
 				AC820D702059E0BB0014A757 /* Assets.xcassets */,
 				AC820D722059E0BB0014A757 /* LaunchScreen.storyboard */,
 				AC820D752059E0BB0014A757 /* Info.plist */,
+				AC820D972059E24D0014A757 /* ConfigViewController.swift */,
+				AC820D992059E25E0014A757 /* SaveViewController.swift */,
 			);
 			path = Pensamentos;
 			sourceTree = "<group>";
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC820D6C2059E0BB0014A757 /* ViewController.swift in Sources */,
+				AC820D6C2059E0BB0014A757 /* QuotesViewController.swift in Sources */,
+				AC820D9A2059E25E0014A757 /* SaveViewController.swift in Sources */,
 				AC820D6A2059E0BB0014A757 /* AppDelegate.swift in Sources */,
+				AC820D982059E24D0014A757 /* ConfigViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
