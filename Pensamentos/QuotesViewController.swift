@@ -31,7 +31,11 @@ class QuotesViewController: UIViewController {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         prepareQuote()
-    }
+   }
+    
+    //override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+    //    prepareQuote()
+    //}
     
     func formatView() {
         view.backgroundColor = config.colorScheme == 0 ? .white : UIColor(red: 156.0/255.0, green: 68.0/255.0, blue: 15.0/255.0, alpha: 1.0)

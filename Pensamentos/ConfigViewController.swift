@@ -10,26 +10,42 @@ import UIKit
 
 class ConfigViewController: UIViewController {
 
+   
+    @IBOutlet weak var swAutorefresh: UISwitch!
+    @IBOutlet weak var lbTimeInterval: UILabel!
+    @IBOutlet weak var slTimeInterval: UISlider!
+    @IBOutlet weak var scColorScheme: UISegmentedControl!
+    
+    let config = Configuration.shared
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        formatView()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func formatView() {
+        swAutorefresh.setOn(config.autorefresh, animated: false)
+        slTimeInterval.setValue(Float(config.timeInterval), animated: false)
+        scColorScheme.selectedSegmentIndex = config.colorScheme
+        changeTimeIntervalLabel(with: config.timeInterval)
     }
-    */
+    
+    func changeTimeIntervalLabel(with value: Double) {
+        lbTimeInterval.text = "Mudar após \(Int(value)) segundos"
+    }
+    
+    @IBAction func changeAutorefresh(_ sender: UISwitch) {
+        config.autorefresh = sender.isOn
+    }
+    
+    @IBAction func changeTimeInterval(_ sender: UISlider) {
+        let value = Double(round(sender.value))
+        changeTimeIntervalLabel(with: value)
+        config.timeInterval = value
+    }
+    
+    @IBAction func changeColorScheme(_ sender: UISegmentedControl) {
+        config.colorScheme = sender.selectedSegmentIndex
+    }
 
 }
