@@ -16,6 +16,10 @@
 		AC820D8A2059E0BB0014A757 /* PensamentosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC820D892059E0BB0014A757 /* PensamentosUITests.swift */; };
 		AC820D982059E24D0014A757 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC820D972059E24D0014A757 /* ConfigViewController.swift */; };
 		AC820D9A2059E25E0014A757 /* SaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC820D992059E25E0014A757 /* SaveViewController.swift */; };
+		AC820D9C2059F6EC0014A757 /* quotes.json in Resources */ = {isa = PBXBuildFile; fileRef = AC820D9B2059F6EC0014A757 /* quotes.json */; };
+		AC820D9E2059F7830014A757 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC820D9D2059F7830014A757 /* Quote.swift */; };
+		AC820DA02059F7A50014A757 /* QuotesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC820D9F2059F7A50014A757 /* QuotesManager.swift */; };
+		AC820DA22059FCF30014A757 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC820DA12059FCF30014A757 /* Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		AC820D8B2059E0BB0014A757 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC820D972059E24D0014A757 /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
 		AC820D992059E25E0014A757 /* SaveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveViewController.swift; sourceTree = "<group>"; };
+		AC820D9B2059F6EC0014A757 /* quotes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = quotes.json; sourceTree = "<group>"; };
+		AC820D9D2059F7830014A757 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		AC820D9F2059F7A50014A757 /* QuotesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesManager.swift; sourceTree = "<group>"; };
+		AC820DA12059FCF30014A757 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +109,18 @@
 		AC820D682059E0BB0014A757 /* Pensamentos */ = {
 			isa = PBXGroup;
 			children = (
+				AC820D9B2059F6EC0014A757 /* quotes.json */,
 				AC820D692059E0BB0014A757 /* AppDelegate.swift */,
 				AC820D6B2059E0BB0014A757 /* QuotesViewController.swift */,
+				AC820DA12059FCF30014A757 /* Configuration.swift */,
 				AC820D6D2059E0BB0014A757 /* Main.storyboard */,
 				AC820D702059E0BB0014A757 /* Assets.xcassets */,
 				AC820D722059E0BB0014A757 /* LaunchScreen.storyboard */,
 				AC820D752059E0BB0014A757 /* Info.plist */,
 				AC820D972059E24D0014A757 /* ConfigViewController.swift */,
 				AC820D992059E25E0014A757 /* SaveViewController.swift */,
+				AC820D9D2059F7830014A757 /* Quote.swift */,
+				AC820D9F2059F7A50014A757 /* QuotesManager.swift */,
 			);
 			path = Pensamentos;
 			sourceTree = "<group>";
@@ -238,6 +250,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC820D9C2059F6EC0014A757 /* quotes.json in Resources */,
 				AC820D742059E0BB0014A757 /* LaunchScreen.storyboard in Resources */,
 				AC820D712059E0BB0014A757 /* Assets.xcassets in Resources */,
 				AC820D6F2059E0BB0014A757 /* Main.storyboard in Resources */,
@@ -267,7 +280,10 @@
 			files = (
 				AC820D6C2059E0BB0014A757 /* QuotesViewController.swift in Sources */,
 				AC820D9A2059E25E0014A757 /* SaveViewController.swift in Sources */,
+				AC820DA22059FCF30014A757 /* Configuration.swift in Sources */,
 				AC820D6A2059E0BB0014A757 /* AppDelegate.swift in Sources */,
+				AC820D9E2059F7830014A757 /* Quote.swift in Sources */,
+				AC820DA02059F7A50014A757 /* QuotesManager.swift in Sources */,
 				AC820D982059E24D0014A757 /* ConfigViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
